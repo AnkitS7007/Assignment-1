@@ -7,9 +7,10 @@ function App() {
   const [login, setLogin] = useState(false);
   return (
     <div>
-      <div>
-        <label>Name : </label>
+      <div className="form">
+        <label className="name">Name : </label>
         <input
+          className="text"
           type="text"
           placeholder="Enter Your Name"
           value={name}
@@ -17,6 +18,7 @@ function App() {
             setName(event.target.value);
           }}
         ></input>
+
         <button
           type="submit"
           onClick={() => {
@@ -27,7 +29,7 @@ function App() {
         </button>
       </div>
       {login && name && <Welcome name={name}></Welcome>}
-      <div>
+      <div className="abc">
         <br></br>
         <br></br>
         <br></br>

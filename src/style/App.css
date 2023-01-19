@@ -13,7 +13,39 @@ button{
   text-align: center;
   justify-content: center;
   align-items: center;
+  display: flex;
+  margin: 5px;
 }
 body{
   background-color: antiquewhite;
 }
+.form{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  
+}
+.name{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 5px;
+}
+.text{
+  font-family: sans-serif;
+  font-size: 20px;
+  border: 1.5px solid black ;
+  margin: 5px;
+}
+.abc{
+  font-family: sans-serif;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+}
+.welcome{
+  font-size: 24px;
+  font-family: sans-serif;
+  margin-top: 100px;
+}
+
