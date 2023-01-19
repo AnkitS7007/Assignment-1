@@ -1,0 +1,19 @@
+h1 {
+  color: #0e90bb;
+  text-align: center;
+  }
+  
+h2 {
+      text-align: center;
+      color: brown;
+}
+
+button{
+  color: #27aedb;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  background-color: antiquewhite;
+}

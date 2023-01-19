@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "../src/style/App.css";
+import Welcome from "./components/Welcome";
 
 function App() {
+  const [name, setName] = useState("");
+  const [login, setLogin] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <div>
+        <label>Name : </label>
+        <input
+          type="text"
+          placeholder="Enter Your Name"
+          value={name}
+          onChange={(event) => {
+            setName(event.target.value);
+          }}
+        ></input>
+        <button
+          type="submit"
+          onClick={() => {
+            setLogin(!login);
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Login
+        </button>
+      </div>
+      {login && name && <Welcome name={name}></Welcome>}
+      <div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h4>
+          <i>Assignment done by Ankit Sharma, 12016468</i>
+        </h4>
+      </div>
     </div>
   );
 }
